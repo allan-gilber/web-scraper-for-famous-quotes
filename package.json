@@ -2,14 +2,13 @@
   "name": "web-scraper-for-famouse-quotes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
     "start": "node --inspect ./build/index.js",
-    "dev-start": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
-    "migrations": "tsnd ./src/migrations/migrations.ts",
+    "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
     "postinstall": "tsc",
-    "build": "tsc",
-    "dev": "ts-node-dev ./src/index.ts"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
