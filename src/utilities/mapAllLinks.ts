@@ -1,12 +1,12 @@
 import puppeteer from 'puppeteer';
 
-export const mapAllLinks = async (siteUrl: string)=>{
+export const mapAllLinks = async (siteUrl: string):  Promise<string[] | undefined> =>{
 	try{
 		let urlToEvaluate = siteUrl;
 		const arrayOfLinks: string[]= [siteUrl];
 
 		while(urlToEvaluate){
-			const browser = await puppeteer.launch({headless: false});
+			const browser = await puppeteer.launch();
 			const webPage = await browser.newPage();
 			await webPage.goto(urlToEvaluate);
 
@@ -16,7 +16,7 @@ export const mapAllLinks = async (siteUrl: string)=>{
 			});
 
 			if(!getLink) {
-				console.log(`Finished link mapping. Found  pages ${arrayOfLinks.length} to scrap.`);
+				console.log(`Finished link mapping. Found a total of ${arrayOfLinks.length} pages to scrap.`);
 				urlToEvaluate = '';
 				browser.close();
 				break;
@@ -30,7 +30,7 @@ export const mapAllLinks = async (siteUrl: string)=>{
 		return arrayOfLinks;
 
 	}catch (error: any){
-		console.error('Something has gone wrong: ', error.message);
+		console.log('Something has gone wrong: ', error.message);
 		return;
 	}
 };
