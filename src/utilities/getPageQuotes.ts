@@ -16,7 +16,6 @@ export const getPageQuotes = async (urlPage: string): Promise<objectOfQuotesStru
 			const authorName: HTMLElement = elementData.querySelector('.author');
 			const tags: string[] = elementData.querySelectorAll('.tag');
 			const quoteText: HTMLElement = elementData.querySelector('.text');
-
 			tags.forEach((tag: any ) => {
 				arrayOfTags.push(tag.innerText as string);
 			});
