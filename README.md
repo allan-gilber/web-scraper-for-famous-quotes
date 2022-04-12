@@ -36,3 +36,16 @@ $ npm start
 # Wait for the program to scrap the data. 
 # If it succesfuly get the data, a file will be created inside the ./src/jsonData/quotesData.json
 ```
+
+## Final Data Structure
+
+After succsefuly runing the scraper, it will create a json file with the following file structure:
+```json
+{
+  "authorName":[
+    {"text": "quote text",
+    "tags": ["stringOne", "stringTwo", ...]
+    }, ...
+  ]
+}
+```
