@@ -1,15 +1,15 @@
 {
   "name": "web-scraper-for-famouse-quotes",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simples webscraper for famous quotes",
   "main": "index.ts",
-  "type": "module",
   "scripts": {
     "start": "node --inspect ./build/index.js",
     "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
     "postinstall": "tsc",
     "build-start": "tsc && node ./build/src/index.js",
-    "test": "clear && jest"
+    "test": "clear && jest",
+    "test2": "clear && jest --detectOpenHandles"
   },
   "repository": {
     "type": "git",
