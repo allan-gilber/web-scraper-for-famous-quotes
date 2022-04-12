@@ -1,6 +1,6 @@
 # Web Scraper for famous quotes
 
-Web Scraper of famouse quotes from [quotes to scrape](http://quotes.toscrape.com/) site.
+Web Scraper of famous quotes from [quotes to scrape](http://quotes.toscrape.com/) site.
 
 ## Utilized languages/tools:
 <div align="center"}>
@@ -13,7 +13,7 @@ Web Scraper of famouse quotes from [quotes to scrape](http://quotes.toscrape.com
 
 ## Prerequisites to run the project:
 
-You will need to have installed the following tools: Gitbash, Node.js, Typescript and VSCode(or similar IDE).
+You will need to have installed the following tools: Gitbash, Node.js, Typescript and VSCode (or similar IDE).
 
 ## How to run the project with Gitbash:
 
@@ -34,12 +34,12 @@ $ npm run dev
 $ npm start
 
 # Wait for the program to scrap the data. 
-# If it succesfuly get the data, a file will be created inside the ./src/jsonData/quotesData.json
+# If it successfully get the data, a file will be created inside the ./src/jsonData/quotesData.json
 ```
 
 ## Final Data Structure
 
-After succsefuly runing the scraper, it will create a json file with the following file structure:
+After successfully running the scraper, it will create a json file with the following file structure:
 ```json
 {
   "authorName":[
